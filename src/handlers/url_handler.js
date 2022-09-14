@@ -1,7 +1,7 @@
 const db_handler = require('./db_handler');
 const createAndSaveUrl = db_handler.createAndSaveUrl;
 const fetchUrl = db_handler.fetchUrl;
-const urlValidator = require('./url_validations').urlValidator;
+const urlValidator = require('../tools/url_validations').urlValidator;
 
 const postUrl = (req, res) => {
     const url = req.body.url
